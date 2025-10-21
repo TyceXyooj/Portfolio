@@ -1,0 +1,125 @@
+<!--
+Tyce Xiong
+Portfolio Final
+5-14-2025
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Sets title, links css file, character encoding, responsive size, and tab icon-->
+        <title>Resume - Tyce Xiong's Portfolio</title>
+        <link rel = "stylesheet" href = "css/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "icon" href = "images/icon.png">
+    </head>
+
+    <body>
+        <br>
+        
+        <!--Navigation-->
+        <div class="dropdown">
+            <img src = "images/hamburger.png" style = "width:50px" class = "burger">
+            <div class="dropdown-content">
+                <a href = "index.html" >Home</a>
+                <a href = "bio.html">Bio</a>
+                <a href = "hobby.html" >Hobbies</a>
+                <a style = "background-color: rgb(5, 72, 131);"href = "resume.html">Resume</a>
+                <a href = "contact.html">Contact</a>
+            </div>
+        </div>
+
+        <!--Profie photo + title
+            class height changes the height of the photo + adds transition to the height when hovered
+            <center> used because margin:auto; didnt work-->
+        <center><img class = "height"id = "profile" src = "images/profile2.png" onmouseenter = "changeImage()"></center>
+        <h1 class = "title">Resume</h1>
+
+        <!--Table with resume in it-->
+        <table class = "resume">
+            <tr>
+                <th><h1 class = "sub">Education</h1></th>
+                <th><h1 class = "sub">Extra Curricolars</h1></th>
+                <th><h1 class = "sub">Volunteer Positions</h1></th>
+                <th><h1 class = "sub">Employment</h1></th>
+            </tr>
+            <tr>
+                <td>
+                    <ol>
+                        <li onmouseover = "resumeOn(0)" onmouseout = "resumeOut()">Stevens Point Area Senior High <br>(2022 - 2025)</li>
+                        <li onmouseover = "resumeOn(1)" onmouseout = "resumeOut()">Benjamin Franklin Junior High <br>(2019 - 2021)</li>
+                        <li onmouseover = "resumeOn(2)" onmouseout = "resumeOut()">McDill Elementary <br>(2012 - 2019)</li>
+                    </ol>
+                </td>
+                <td>
+                    <ol>
+                        <li onmouseover = "resumeOn(3)" onmouseout = "resumeOut()">Cross Country <br>(2019 - 2025)</li>
+                        <li onmouseover = "resumeOn(4)" onmouseout = "resumeOut()">Track and Field <br>(2023 - 2025)</li>
+                        <li onmouseover = "resumeOn(5)" onmouseout = "resumeOut()">Math League <br>(2024 - 2025)</li>
+                    </ol>
+                </td>
+                <td>
+                    <ol>
+                        <li onmouseover = "resumeOn(6)" onmouseout = "resumeOut()">Lake Pacawa Parkrun<br>(2024 - Present)</li>
+                        <li onmouseover = "resumeOn(7)" onmouseout = "resumeOut()">Stevens Point Turkey Trot <br>(2024)</li>
+                    </ol>
+                </td>
+                <td>
+                    <ol>
+                        <li onmouseover = "resumeOn(8)" onmouseout = "resumeOut()">Fire House Subs--Team Member <br>(2024 - Present)</li>
+                        <li onmouseover = "resumeOn(9)" onmouseout = "resumeOut()">Stevens Point Area Public School District--Youth Tutor <br>(2022)</li>
+                        <li onmouseover = "resumeOn(10)" onmouseout = "resumeOut()">Xiong Farms--Customer Service/Cashier <br>(2012 - 2019)</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+        <img id = "resumePhoto" src = "">
+
+        <!--Computer Science Section of Resume-->
+        <h1 class = "sub">Computer Science Classes</h1>
+        <ul>
+            <li>
+                SPASH - AP Computer Science A (2023 - 2024 school year)
+            </li>
+            <li>
+                SPASH - Computer Hardware (Fall 2024)
+            </li>
+            <li>
+                SPASH - Cyber Security (Spring 2025)
+            </li>
+            <li>
+                UWSP - CIS 120 Data Structures and Algorithms (Fall 2025)
+            </li>
+            <li>
+                SPASH - Web Design (Spring 2025)
+            </li>
+        </ul>
+        <h1 class = "sub">Programming Languages</h1>
+        <ul>
+            <li>
+                Java
+            </li>
+            <li>
+                Python
+            </li>
+            <li>
+                HTML
+            </li>
+            <li>
+                CSS
+            </li>
+            <li>
+                JavaScript
+            </li>
+        </ul>
+
+        <!--Links script-->
+        <script src = "js/script.js"></script>
+
+        <br>
+
+        <div class="footer">
+            <p>&copy; 2025 Tyce Xiong. All Rights Reserved.</p>
+        </div>
+    </body>
+</html>

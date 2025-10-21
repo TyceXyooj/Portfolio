@@ -1,0 +1,84 @@
+<!--
+Tyce Xiong
+Portfolio Final
+5-14-2025
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Sets title, links css file, character encoding, responsive size, and tab icon-->
+        <title>Biography - Tyce Xiong's Portfolio</title>
+        <link rel = "stylesheet" href = "css/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "icon" href = "images/icon.png">
+    </head>
+
+    <body>
+        <br>
+        
+        <!--Navigation-->
+            <div class="dropdown">
+                <img src = "images/hamburger.png" style = "width:50px" class = "burger">
+                <div class="dropdown-content">
+                    <a href = "index.html" >Home</a>
+                    <a style = "background-color: rgb(5, 72, 131);" href = "bio.html">Bio</a>
+                    <a href = "hobby.html" >Hobbies</a>
+                    <a href = "resume.html">Resume</a>
+                    <a href = "contact.html">Contact</a>
+                </div>
+            </div>
+
+        <!--Profie photo + title
+            class height changes the height of the photo + adds transition to the height when hovered
+            <center> used because margin:auto; didnt work-->
+        <center><img class = "height"id = "profile" src = "images/profile.png" onmouseenter = "changeImage()"></center>
+        <h1 class = "title">Biography</h1>
+        
+        <!--Body text + easter egg-->
+        <p onmouseover="secretImg()" onmouseout="secretImgGone()">Hello! I am Tyce Xiong. I am a student at SPASH, and a member of the class of 2025. I am a part of the Cross Country and Track and Field teams as well as the Math League team.</p>
+
+        <!--Family Tree-->
+        <!--From: https://codesandbox.io/p/sandbox/family-tree-with-html-css-eo8uf?file=%2Findex.html-->
+        <h1 class = "sub">Family</h1>
+        <div class="tree">
+            <ul>
+              <li>
+                <a>Tyce Xiong (Me)</a>
+                <center><ul>
+                    <li>
+                        <a>Vieng Xiong (Father)</a>
+                        <ul>
+                            <li>
+                                <a>Nao Houa Xiong (Grandfather)</a>
+                            </li>
+                            <li>
+                                <a>Blia Xiong (Grandmother)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Sharaa Xiong (Mother)</a>
+                        <ul>
+                            <li>
+                                <a>Terry Ives (Grandmother)</a>
+                            </li>
+                            <li>
+                                <a>John Ives (Grandfather)</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <!--Links script-->
+        <script src = "js/script.js"></script>
+
+        <div class="footer">
+            <p>&copy; 2025 Tyce Xiong. All Rights Reserved.</p>
+        </div>
+    </body>
+</html>

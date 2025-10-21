@@ -1,0 +1,98 @@
+<!--
+Tyce Xiong
+Portfolio Final
+5-14-2025
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Sets title, links css file, character encoding, responsive size, and tab icon-->
+        <title>Contact - Tyce Xiong's Portfolio</title>
+        <link rel = "stylesheet" href = "css/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "icon" href = "images/icon.png">
+    </head>
+
+    <body>
+        <br>
+        
+        <!--Navigation-->
+        <div class="dropdown">
+            <img src = "images/hamburger.png" style = "width:50px" class = "burger">
+            <div class="dropdown-content">
+                <a href = "index.html" >Home</a>
+                <a href = "bio.html">Bio</a>
+                <a href = "hobby.html" >Hobbies</a>
+                <a href = "resume.html">Resume</a>
+                <a style = "background-color: rgb(5, 72, 131);"href = "contact.html">Contact</a>
+            </div>
+        </div>
+
+        <!--Profie photo + title
+            class height changes the height of the photo + adds transition to the height when hovered
+            <center> used because margin:auto; didnt work-->
+        <center><img class = "height"id = "profile" src = "images/profile2.png" onmouseenter = "changeImage()"></center>
+        <h1 class = "title">Contact</h1>
+
+        <p>Fill out this form to contact Tyce Xiong:</p>
+
+        <!--Contact form
+            Sends info to http://mstc.brentapresley.com/HTMLFormTest.php-->
+        <form action="http://mstc.brentapresley.com/HTMLFormTest.php" target="_blank" method="GET">
+            <label for="reason">Reason for Contact:</label>
+            <br>
+            <select id="reason" name="reason"required>
+                <option value="School Related" selected>School Related</option>
+                <option value="Work Related">Work Related</option>
+                <option value="Interview">Interview</option>
+                <option value="Other" >Other</option>
+            </select>
+
+            <br><br>
+            
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" required maxlength="29"><br>
+            <label for="lname" >Last name:</label><br>
+            <input type="text" id="lname" name="lname" required maxlength="29">
+  
+            <br><br>
+
+            <label for="datemin" required>Enter today's date:</label><br>
+            <input type="date" id="date" name="date">
+
+            <br><br>
+            
+            <label for="email">Enter your email:</label><br>
+            <input type="email" name = "email" id = "email" required>
+
+            <br><br>
+
+            <label for="phone">Enter your phone number:</label><br>
+            <input type="tel" name="phone" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
+
+            <br><br>
+
+            <input type="checkbox" id="urgent" name="urgent" value="URGENT">
+            <label for="urgent">This contact is regarding an urgent matter</label>
+
+            <br><br>
+
+            <label for = "message">Type your message here:</label>
+            <br>
+            <textarea name="message" rows="4" cols="50" required></textarea>
+            
+            <br><br>
+            <input type="submit" value="Submit">
+            
+            <br><br><br><br><br><br>
+        </form>
+
+        <!--Links script-->
+        <script src = "js/script.js"></script>
+
+        <div class="footer">
+            <p>&copy; 2025 Tyce Xiong. All Rights Reserved.</p>
+        </div>
+    </body>
+</html>

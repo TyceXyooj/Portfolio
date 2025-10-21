@@ -1,0 +1,125 @@
+<!--
+Tyce Xiong
+Portfolio Final
+5-14-2025
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Sets title, links css file, character encoding, responsive size, and tab icon-->
+        <title>Hobbies - Tyce Xiong's Portfolio</title>
+        <link rel = "stylesheet" href = "css/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "icon" href = "images/icon.png">
+
+        <!--CSS for 3 column lay out-->
+        <style>
+            h1.title{
+                font-size: 300%;
+                text-align:center;
+            }
+            ul.navBar{
+                display: inline;
+            }
+            img.inCol{
+                display: block;
+                margin: auto;
+            }
+
+            /* Create three equal columns that floats next to each other */
+            .columnBig {
+                float: left;
+                width: 32%;
+                outline:black solid 2px;
+                margin:5px;
+            }
+            .columnBig h2{
+                padding-left:30px;
+            }
+
+
+            /* Clear floats after the columns */
+            .row:after {
+                display: table;
+                content: "";
+                clear: both; 
+            }
+        </style>
+    </head>
+
+    <body>
+        <br>
+        
+        <!--Navigation-->
+        <div class="dropdown">
+            <img src = "images/hamburger.png" style = "width:50px" class = "burger">
+            <div class="dropdown-content">
+                <a href = "index.html" >Home</a>
+                <a href = "bio.html">Bio</a>
+                <a style = "background-color: rgb(5, 72, 131);"href = "hobby.html" >Hobbies</a>
+                <a href = "resume.html">Resume</a>
+                <a href = "contact.html">Contact</a>
+            </div>
+        </div>
+
+        <!--Profie photo + title
+            class height changes the height of the photo + adds transition to the height when hovered
+            <center> used because margin:auto; didnt work-->
+        <center><img class = "height"id = "profile" src = "images/profile.png" onmouseenter = "changeImage()"></center>
+        <h1 class = "title">Hobbies and Interests</h1>
+
+        <!--Lists hobbies-->
+        <p>My hobbies and interests include:</p>
+        <ul>
+            <li>
+                Running Track and Cross Country
+            </li>
+            <li>
+                Reading
+            </li>
+            <li>
+                Writing
+            </li>
+        </ul>
+
+        
+        <!--Sets up 3 column lay out with headers + information-->
+        <div class="row">
+            <div class="columnBig">
+                <h2>Running</h2>
+                <p class = "colP">I have been running since 4th grade. My first distance race was at the <a href = "https://www.facebook.com/stevenspointrunningoftheflag/">Stevens Point Running of the Flag</a>. In 7th grade, I joined the SPASH XC Middle School Team, and have continued to run for that team since. The result for every race that I have run can be found <a href = "https://sites.google.com/view/tycexiong/home">here</a>.</p>
+                <center><iframe width = "90%" height="300px" src="https://www.youtube.com/embed/Q_VM4fk-31E" title="A Day in the Life of a Track Athlete" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+                <p class = "caption">Tyce Xiong's video about the Neenah Track and Field Invitational.</p>
+                <center>
+                    <audio controls>
+                        <source src="audio/podcast.MP3" type="audio/ogg">
+                     Your browser does not support the audio element.
+                    </audio>
+                </center>
+                <p class = "caption">Tyce Xiong interviewing Andrew Dziak about his senior track season.</p>
+            </div>
+            <div class="columnBig">
+              <h2>Reading</h2>
+              <p class = "colP">I make it a point to read a little bit every day. So far, my favorite books include The Hunger Games and The Maze Runner.</p>
+              <a href = "https://en.wikipedia.org/wiki/The_Maze_Runner"><img class = "inCol"src = "images/reading.png" style = "width: 90%"></a> 
+              <p class = "caption">"The Maze Runner" by James Dashner</p>
+              
+            </div>
+            <div class="columnBig">
+              <h2>Writing</h2>
+              <p class = "colP">I try to write in my free time. I have a journal that I write it most weeks. I have also written articles for the <a class = "inCol"href = "https://spashmirror.com/staff_name/tyce-xiong/">SPASH Mirror</a>. One day, I hope to write a novel.</p>
+              <a href = "https://spashmirror.com/8857/editorial/political-participation-as-a-high-school-student/"><img class = "inCol"src = "images/writing.png" style = "width: 90%"></a> 
+              <p class = "caption">An article written by Tyce Xiong for the SPASH Mirror.</p>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <!--Links script-->
+        <script src = "js/script.js"></script>
+        <div class="footer">
+            <p>&copy; 2025 Tyce Xiong. All Rights Reserved.</p>
+        </div>
+    </body>
+</html>

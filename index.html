@@ -1,0 +1,71 @@
+<!--
+Tyce Xiong
+Portfolio Final
+5-1-2025
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Sets title, links css file, character encoding, responsive size, and tab icon-->
+        <title>Tyce Xiong's Portfolio</title>
+        <link rel = "stylesheet" href = "css/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "icon" href = "images/icon.png">
+    </head>
+
+    <body>
+        <br>
+        
+        <!--Navigation-->
+        <div class="dropdown">
+            <img src = "images/hamburger.png" style = "width:50px" class = "burger">
+            <div class="dropdown-content">
+                <a style = "background-color: rgb(5, 72, 131);"href = "index.html" >Home</a>
+                <a href = "bio.html">Bio</a>
+                <a href = "hobby.html" >Hobbies</a>
+                <a href = "resume.html">Resume</a>
+                <a href = "contact.html">Contact</a>
+            </div>
+        </div>
+
+        <!--Profie photo + title
+            class height changes the height of the photo + adds transition to the height when hovered
+            <center> used because margin:auto; didnt work-->
+        <center><img class = "height"id = "profile" src = "images/profile2.png" onmouseenter = "changeImage()"></center>
+        <h1 class = "title" id = "title" onmouseover="homeTextOver()" onmouseout="homeTextOff()">Tyce Xiong's E-Portfolio</h1>
+
+        <p>Any information that you may need about Tyce Xiong can be found here!</p>
+
+        <!--shows other pages-->
+        <h1 class = "sub">Pages</h1>
+        <ul>
+            <li>
+                <a href = "bio.html">Biography</a>
+            </li>
+            <li>
+                <a href = "hobby.html">Hobbies and Interests</a>
+            </li>
+            <li>
+                <a href = "resume.html">Resume</a>
+            </li>
+            <li>
+                <a href = "contact.html">Contact</a>
+            </li>
+        </ul>
+
+        <!--Countdown to my graduation day-->
+        <p class = "sub" id = "countTitle" onmouseover="count1()" onmouseout="count2()"><b>Days until graduation</b></p>
+        <p id = "count"></p>
+
+        <br>
+
+        <!--links main script + countdown script-->
+        <script src = "js/script.js"></script>
+        <script src = "js/countdown.js"></script>
+
+        <div class="footer">
+            <p>&copy; 2025 Tyce Xiong. All Rights Reserved.</p>
+        </div>
+    </body>
+</html>
